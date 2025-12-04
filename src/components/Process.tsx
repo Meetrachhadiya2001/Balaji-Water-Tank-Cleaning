@@ -1,14 +1,14 @@
 import React from 'react';
-import { Droplet, Trash2, ShowerHead, Wind, SprayCan, Sun } from 'lucide-react';
+import { Droplets, Trash2, ShowerHead, Wind, SprayCan, Zap } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const steps = [
-  { icon: Droplet, title: "Dewatering", desc: "Mechanized draining of stored water." },
+  { icon: Droplets, title: "Dewatering", desc: "Mechanized draining of stored water." },
   { icon: Trash2, title: "Sludge Removal", desc: "Removal of dirt and mud using special pumps." },
   { icon: ShowerHead, title: "High Pressure", desc: "Cleaning walls & ceiling with rotary jets." },
   { icon: Wind, title: "Vacuuming", desc: "Sucking out remaining contaminants." },
   { icon: SprayCan, title: "Anti-Bacterial", desc: "Spray application to kill germs." },
-  { icon: Sun, title: "UV Radiation", desc: "Final sterilization using UV radiators." },
+  { icon: Zap, title: "UV Radiation", desc: "Final sterilization using UV radiators." },
 ];
 
 const Process: React.FC = () => {

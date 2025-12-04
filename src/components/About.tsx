@@ -1,5 +1,5 @@
 import React from "react";
-import { ShieldCheck, Users, Award, CheckCircle2 } from "lucide-react";
+import { ShieldCheck, UserCheck, Award, Clock } from "lucide-react";
 import { motion } from "framer-motion";
 import aboutUs from "/images/AboutUs.png";
 
@@ -63,7 +63,7 @@ const About: React.FC = () => {
               </div>
               <div className="flex items-start gap-3">
                 <div className="p-2 bg-blue-100 rounded-lg text-primary">
-                  <Users size={24} />
+                  <UserCheck size={24} />
                 </div>
                 <div>
                   <h4 className="font-bold text-darkBlue">Hygienic Entry</h4>
@@ -85,7 +85,7 @@ const About: React.FC = () => {
               </div>
               <div className="flex items-start gap-3">
                 <div className="p-2 bg-blue-100 rounded-lg text-primary">
-                  <CheckCircle2 size={24} />
+                  <Clock size={24} />
                 </div>
                 <div>
                   <h4 className="font-bold text-darkBlue">Fast Service</h4>
@@ -130,7 +130,7 @@ const About: React.FC = () => {
             </div>
 
             {/* Floating Experience Badge */}
-            <div className="absolute -bottom-8 -left-8 md:left-[-30px] bg-white p-6 md:p-8 rounded-2xl shadow-xl border-l-8 border-primary animate-float hidden md:block">
+            <div className="absolute -bottom-8 -left-8 md:left-[-30px] bg-white/70 backdrop-blur-md p-6 md:p-8 rounded-2xl shadow-xl border-l-8 border-primary animate-float hidden md:block">
               <div className="flex items-baseline gap-1">
                 <span className="text-5xl font-extrabold text-primary">15</span>
                 <span className="text-3xl font-bold text-primary">+</span>
@@ -143,7 +143,7 @@ const About: React.FC = () => {
             </div>
 
             {/* Mobile Badge */}
-            <div className="md:hidden absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur-sm p-4 rounded-xl shadow-lg border-l-4 border-primary">
+            <div className="md:hidden absolute bottom-4 left-4 right-4 bg-white/70 backdrop-blur-sm p-4 rounded-xl shadow-lg border-l-4 border-primary">
               <div className="flex items-center gap-4">
                 <span className="text-3xl font-extrabold text-primary">
                   15+

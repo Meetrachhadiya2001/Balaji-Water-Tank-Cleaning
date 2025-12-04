@@ -1,25 +1,25 @@
 import React from 'react';
-import { Shield, Droplets, Users2, Clock, Award, ThumbsUp } from 'lucide-react';
+import { ShieldCheck, Droplet, UserCheck, Timer, Award, BadgeCheck } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const benefits = [
     {
-        icon: Shield,
+        icon: ShieldCheck,
         title: "100% Safe & Hygienic",
         description: "Our team follows strict hygiene protocols with full protective gear including gloves, safety boots, and sanitized equipment."
     },
     {
-        icon: Droplets,
+        icon: Droplet,
         title: "99.9% Bacteria Free",
         description: "Advanced UV sterilization and anti-bacterial treatment ensures your water is completely safe for consumption."
     },
     {
-        icon: Users2,
+        icon: UserCheck,
         title: "Trained Professionals",
         description: "Our certified technicians are trained in German cleaning technology and safety standards."
     },
     {
-        icon: Clock,
+        icon: Timer,
         title: "Quick Service",
         description: "Complete tank cleaning in just 60-90 minutes with minimal disruption to your daily routine."
     },
@@ -29,7 +29,7 @@ const benefits = [
         description: "Trusted by thousands of homes, hospitals, hotels, and industries across Rajkot."
     },
     {
-        icon: ThumbsUp,
+        icon: BadgeCheck,
         title: "Satisfaction Guaranteed",
         description: "We stand behind our work with a quality guarantee and post-service water quality report."
     }

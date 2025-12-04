@@ -60,16 +60,16 @@ const Header: React.FC = () => {
                 className="w-full h-full object-contain p-1"
               />
             </div>
-            <div className="flex flex-col">
+            <div className="flex flex-col gap-2">
               <span
-                className={`font-display font-bold text-base lg:text-2xl leading-none tracking-wide ${
+                className={`font-display font-bold text-xl lg:text-2xl leading-none tracking-wide ${
                   isScrolled ? "text-darkBlue" : "text-white"
                 }`}
               >
                 BALAJI
               </span>
               <span
-                className={`text-[0.6rem] lg:text-xs font-bold tracking-[0.15em] md:tracking-[0.2em] uppercase ${
+                className={`text-xs font-bold tracking-[0.15em] md:tracking-[0.2em] uppercase ${
                   isScrolled ? "text-primary" : "text-secondary"
                 }`}
               >

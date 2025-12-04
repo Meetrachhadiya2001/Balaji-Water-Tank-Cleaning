@@ -1,9 +1,9 @@
 import React from 'react';
-import { Building2, Factory, Stethoscope, Utensils } from 'lucide-react';
+import { Home, Factory, Hospital, UtensilsCrossed } from 'lucide-react';
 
 const services = [
   {
-    icon: Building2,
+    icon: Home,
     title: "Residential",
     image: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
     list: ["High Rise Apartments", "Bungalows", "Housing Societies"]
@@ -15,13 +15,13 @@ const services = [
     list: ["Chemical Factories", "Manufacturing Units", "Warehouses"]
   },
   {
-    icon: Stethoscope,
+    icon: Hospital,
     title: "Healthcare",
     image: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
     list: ["Hospitals & Clinics", "Laboratories", "Pharmaceuticals"]
   },
   {
-    icon: Utensils,
+    icon: UtensilsCrossed,
     title: "Hospitality",
     image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
     list: ["Hotels & Resorts", "Banquet Halls", "Restaurants"]
@@ -40,9 +40,9 @@ const Services: React.FC = () => {
           {services.map((service, index) => (
             <div key={index} className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 group">
               <div className="h-48 overflow-hidden">
-                <img 
-                  src={service.image} 
-                  alt={service.title} 
+                <img
+                  src={service.image}
+                  alt={service.title}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
               </div>

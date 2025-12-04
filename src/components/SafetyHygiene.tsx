@@ -1,5 +1,5 @@
 import React from 'react';
-import { ShieldCheck, Droplet, Users, Sparkles } from 'lucide-react';
+import { ShieldCheck, Wrench, GraduationCap, Sparkles } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const protocols = [
@@ -15,7 +15,7 @@ const protocols = [
         ]
     },
     {
-        icon: Droplet,
+        icon: Wrench,
         title: "Sanitized Equipment",
         description: "All cleaning equipment is thoroughly sanitized before and after each service:",
         items: [
@@ -26,7 +26,7 @@ const protocols = [
         ]
     },
     {
-        icon: Users,
+        icon: GraduationCap,
         title: "Trained Personnel",
         description: "Our team undergoes rigorous training and certification:",
         items: [
