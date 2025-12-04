@@ -36,20 +36,23 @@ const Header: React.FC = () => {
       <motion.header
         initial={{ y: -100 }}
         animate={{ y: 0 }}
-        className={`fixed left-0 right-0 z-50 transition-all duration-300 ${isScrolled
-          ? "top-0 py-3 bg-white/70 backdrop-blur-md shadow-lg"
-          : "top-5 py-4 bg-white/10 backdrop-blur-md border border-white/20 shadow-xl w-[90%] md:w-[95%] max-w-[1280px] mx-auto rounded-full"
-          }`}
+        className={`fixed left-0 right-0 z-50 transition-all duration-300 ${
+          isScrolled
+            ? "top-0 py-3 bg-white/70 backdrop-blur-md shadow-lg"
+            : "top-5 py-4 bg-white/10 backdrop-blur-md border border-white/20 shadow-xl w-[90%] md:w-[95%] max-w-[1280px] mx-auto rounded-full"
+        }`}
       >
         <div
-          className={`container mx-auto px-6 flex justify-between items-center ${!isScrolled ? "max-w-none" : ""
-            }`}
+          className={`container mx-auto px-6 flex justify-between items-center ${
+            !isScrolled ? "max-w-none" : ""
+          }`}
         >
           {/* Logo */}
           <a href="#" className="flex items-center gap-2 md:gap-3 group">
             <div
-              className={`relative w-12 h-12 md:w-16 md:h-16 flex items-center justify-center rounded-full border-2 overflow-hidden bg-white transition-transform duration-300 group-hover:rotate-12 shrink-0 ${isScrolled ? "border-primary" : "border-secondary"
-                }`}
+              className={`relative w-14 h-14 md:w-16 md:h-16 flex items-center justify-center rounded-full border-2 overflow-hidden bg-white transition-transform duration-300 group-hover:rotate-12 shrink-0 ${
+                isScrolled ? "border-primary" : "border-secondary"
+              }`}
             >
               <img
                 src={logo}
@@ -59,14 +62,16 @@ const Header: React.FC = () => {
             </div>
             <div className="flex flex-col">
               <span
-                className={`font-display font-bold text-base lg:text-2xl leading-none tracking-wide ${isScrolled ? "text-darkBlue" : "text-white"
-                  }`}
+                className={`font-display font-bold text-base lg:text-2xl leading-none tracking-wide ${
+                  isScrolled ? "text-darkBlue" : "text-white"
+                }`}
               >
                 BALAJI
               </span>
               <span
-                className={`text-[0.6rem] lg:text-xs font-bold tracking-[0.15em] md:tracking-[0.2em] uppercase ${isScrolled ? "text-primary" : "text-secondary"
-                  }`}
+                className={`text-[0.6rem] lg:text-xs font-bold tracking-[0.15em] md:tracking-[0.2em] uppercase ${
+                  isScrolled ? "text-primary" : "text-secondary"
+                }`}
               >
                 Water Tank Cleaning
               </span>
@@ -79,10 +84,11 @@ const Header: React.FC = () => {
               <a
                 key={link.name}
                 href={link.href}
-                className={`text-sm font-semibold uppercase tracking-wider relative group ${isScrolled
-                  ? "text-darkBlue hover:text-primary"
-                  : "text-white hover:text-secondary"
-                  }`}
+                className={`text-sm font-semibold uppercase tracking-wider relative group ${
+                  isScrolled
+                    ? "text-darkBlue hover:text-primary"
+                    : "text-white hover:text-secondary"
+                }`}
               >
                 {link.name}
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-secondary transition-all duration-300 group-hover:w-full"></span>
@@ -90,10 +96,11 @@ const Header: React.FC = () => {
             ))}
             <a
               href="#contact"
-              className={`px-6 py-2 rounded-full font-bold uppercase text-sm tracking-wide transition-all shadow-lg hover:shadow-cyan-500/50 hover:-translate-y-1 ${isScrolled
-                ? "bg-gradient-to-r from-primary to-blue-500 text-white"
-                : "bg-white text-primary hover:bg-secondary hover:text-white"
-                }`}
+              className={`px-6 py-2 rounded-full font-bold uppercase text-sm tracking-wide transition-all shadow-lg hover:shadow-cyan-500/50 hover:-translate-y-1 ${
+                isScrolled
+                  ? "bg-gradient-to-r from-primary to-blue-500 text-white"
+                  : "bg-white text-primary hover:bg-secondary hover:text-white"
+              }`}
             >
               Book Now
             </a>
@@ -102,8 +109,9 @@ const Header: React.FC = () => {
           {/* Mobile Toggle */}
           <button
             onClick={() => setIsMobileMenuOpen(true)}
-            className={`md:hidden p-2 text-2xl transition-colors ${isScrolled ? "text-darkBlue" : "text-white"
-              }`}
+            className={`md:hidden p-2 text-2xl transition-colors ${
+              isScrolled ? "text-darkBlue" : "text-white"
+            }`}
           >
             <Menu />
           </button>
@@ -123,8 +131,9 @@ const Header: React.FC = () => {
             <div className="flex items-center justify-between p-6 border-b border-white/10 shrink-0">
               <a href="#" className="flex items-center gap-2 md:gap-3 group">
                 <div
-                  className={`relative w-12 h-12 md:w-16 md:h-16 flex items-center justify-center rounded-full border-2 overflow-hidden bg-white transition-transform duration-300 group-hover:rotate-12 shrink-0 ${isScrolled ? "border-primary" : "border-secondary"
-                    }`}
+                  className={`relative w-12 h-12 md:w-16 md:h-16 flex items-center justify-center rounded-full border-2 overflow-hidden bg-white transition-transform duration-300 group-hover:rotate-12 shrink-0 ${
+                    isScrolled ? "border-primary" : "border-secondary"
+                  }`}
                 >
                   <img
                     src={logo}
@@ -134,14 +143,16 @@ const Header: React.FC = () => {
                 </div>
                 <div className="flex flex-col">
                   <span
-                    className={`font-display font-bold text-base lg:text-2xl leading-none tracking-wide ${isScrolled ? "text-darkBlue" : "text-white"
-                      }`}
+                    className={`font-display font-bold text-base lg:text-2xl leading-none tracking-wide ${
+                      isScrolled ? "text-darkBlue" : "text-white"
+                    }`}
                   >
                     BALAJI
                   </span>
                   <span
-                    className={`text-[0.6rem] lg:text-xs font-bold tracking-[0.15em] md:tracking-[0.2em] uppercase ${isScrolled ? "text-primary" : "text-secondary"
-                      }`}
+                    className={`text-[0.6rem] lg:text-xs font-bold tracking-[0.15em] md:tracking-[0.2em] uppercase ${
+                      isScrolled ? "text-primary" : "text-secondary"
+                    }`}
                   >
                     Water Tank Cleaning
                   </span>
